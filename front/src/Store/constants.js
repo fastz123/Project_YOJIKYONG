@@ -1,0 +1,3 @@
+export const SET_DATA = 'SET_DATA';
+export const SET_MEDICALS = 'SET_MEDICALS';
+export const CHANGE_MARKER_POSITION = 'CHANGE_MARKER_POSITION';

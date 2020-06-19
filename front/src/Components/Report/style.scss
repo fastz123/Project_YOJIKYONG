@@ -1,0 +1,52 @@
+.MuiTableCell-root {
+  text-align: center;
+}
+
+.MuiTableContainer-root {
+  margin-bottom: 2vh;
+}
+
+.Board {
+  width: 80vw;
+  min-width: 400px;
+  max-width: 1000px;
+  justify-content: center;
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Submit {
+  width: 85%;
+}
+.SubmitForm {
+  margin-bottom: 2vh;
+}
+.SubmitFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+.ButtonGroups{
+  display: flex;
+  justify-content: space-between;
+}
+.writeButton{
+  margin-right: 1vw;
+}
+.ConditionCheck{
+  margin: 1vh 0 1vh 0;
+  padding : 0 16px 0 16px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.locationSelect{
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.categorySelect{
+  margin-left: 1vw;
+  margin-right: 1vw;
+}

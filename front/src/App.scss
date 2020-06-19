@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  // max-width: 500px;
+  width: 100vw;
+  text-align: center;
+  flex-direction: column;
+}
+#root {
+  justify-content: center;
+  display: flex;
+
+}

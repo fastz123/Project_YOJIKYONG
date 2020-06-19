@@ -1,0 +1,53 @@
+stages:
+    - build
+    - deploy
+
+build-front:
+    stage: build
+    cache:
+        key: ${CI_COMMIT_REF_SLUG}
+        paths:
+            - front/node_modules
+    only : 
+        - master 
+        - develop
+    script :
+        - cd $CI_PROJECT_DIR/front
+        - unset CI
+        - npm install
+        - REACT_APP_PUBLIC_API_URL=$PUBLIC_BACK_URL npm run build
+    tags :
+        - deploypjt
+
+deploy-front:
+    stage: deploy
+    only : 
+        - master
+        - develop
+    script :
+        - sudo systemctl restart nginx.service
+    tags :
+        - deploypjt
+
+build-back:
+    stage: build
+    only : 
+        - master 
+        - develop
+    script :
+        - cd $CI_PROJECT_DIR
+        - cd back-spring
+        - chmod +x gradlew
+        - ./gradlew build
+    tags :
+        - deploypjt
+
+deploy-back:
+    stage: deploy
+    only : 
+        - master 
+        - develop
+    script :
+        - pm2 restart server
+    tags :
+        - deploypjt

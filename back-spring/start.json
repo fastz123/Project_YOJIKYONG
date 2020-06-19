@@ -1,0 +1,17 @@
+{
+  "apps":[{
+    "name":"server",
+    "cwd":".",
+    "args":[
+      "-jar",
+      "./build/libs/back-0.0.1-SNAPSHOT.jar"
+    ],
+    "env":{
+    },
+    "script":"/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java",
+    "node_args":[],
+    "exec_interpreter":"none",
+    "exec_file":"/srv/log",
+    "exec_mode":"fork",
+  }]
+}

@@ -1,0 +1,106 @@
+.StoreListPaper {
+  width: 80vw;
+  // background-color: white;
+  top: 64px;
+  position: absolute;
+  // z-index: -2;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: black;
+}
+
+.slick-slider {
+  margin-top: 2vh;
+}
+.ImagePaper {
+  width: 10vw;
+  height: 8vw;
+}
+.TextPaper {
+  width: 10vw;
+  margin-top: 2vh;
+  //height: 12vh;
+}
+.SliderItem {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  //border: "1px solid #FAC60E",
+  width: 70%;
+  min-width: 80vw;
+}
+.slick-track {
+  height: 30vh;
+}
+
+.Loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  flex-direction: column;
+}
+.LoadingText {
+  margin-top: 4vh;
+}
+
+.slick-initialized .slick-slide{
+  display: flex;
+}
+div{
+  outline:none
+}
+
+.ModalBox{
+  position: absolute;
+  top : 30vh;
+  left : 30vw;
+  width: 40vw;
+  min-height: 40vh;
+  background-color: white;
+  //justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  padding: 3vw 3vw 3vw 3vw;
+}
+.ModalBoxLoading{
+  position: absolute;
+  top : 30vh;
+  left : 30vw;
+  width: 40vw;
+  min-height: 40vh;
+  background-color: white;
+  // justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vw 3vw 3vw 3vw;
+}
+.css-1rpz77w{
+  display: flex;
+  // justify-self: center;
+  align-self: center;
+  margin-top: 15vh;
+}
+
+.additionalInfo{
+  margin-bottom: 1vh;
+}
+
+.TitleBox{
+  margin-bottom: 2vh;
+}
+.ContentBox{
+  margin-bottom: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+.AddrText{
+  text-align: center;
+  margin-top: 4vh;
+}

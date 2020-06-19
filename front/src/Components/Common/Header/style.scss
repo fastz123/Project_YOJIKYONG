@@ -1,0 +1,21 @@
+.Header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  flex-grow: 1;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: #ff7f00;
+  color : white;
+}
+
+.Image{
+  display: flex;
+  width:  4vw;
+  height: 4vw;
+  background-color: #ff7f00;
+  
+}
